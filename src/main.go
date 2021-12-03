@@ -177,8 +177,8 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	// If the message is "!map"
 	if m.Content == "!map" {
 		log.Println("!map - " + s.State.User.ID)
-		s.ChannelMessageSend(m.ChannelID, "Vanilla Online Map - https://map.legacy.darkwindcraft.com")
-		s.ChannelMessageSend(m.ChannelID, "Legacy Online Map - https://map.vanilla.darkwindcraft.com")
+		s.ChannelMessageSend(m.ChannelID, "Vanilla Online Map - https://map.vanilla.darkwindcraft.com")
+		s.ChannelMessageSend(m.ChannelID, "Legacy Online Map - https://map.legacy.darkwindcraft.com")
 	}
 
 	// If the message is "!help"
